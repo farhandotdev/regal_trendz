@@ -1,1 +1,1 @@
-## Regal Trendz
+# Regal Trendz
