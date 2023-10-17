@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    <div>Hello I am Mahendra Owner of Regaltrends</div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
