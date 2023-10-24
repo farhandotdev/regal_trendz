@@ -1,0 +1,13 @@
+.Slidehome{
+    height: 65vh;
+    width: 100%;
+    /* background-color: red; */
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Carousel-home{
+    height: 90%;
+    width: 35%;
+}
