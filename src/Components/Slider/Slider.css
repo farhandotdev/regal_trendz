@@ -5,9 +5,12 @@
     background-color: var(--light);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    border: 2px solid red;
+    overflow: hidden;
 }
 .Carousel-home{
-    height: 90%;
-    width: 35%;
+    height: 50%;
+    width: 90%;
+
 }
