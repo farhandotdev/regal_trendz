@@ -1,0 +1,107 @@
+.Main-container-parent {
+    width: 81vw;
+  }
+  .main-container-child {
+    height: 100%;
+  }
+  .card-heading-part {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-heading-part h3,
+  h6 {
+    font-size: 1.8rem;
+  }
+  .card-main-parent {
+    height: 90%;
+    margin-top: 8px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .child-cards {
+  
+    width: 21%;
+    height:45%;
+  }
+  .image-card {
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: 100%;
+  }
+  .extra-things-card {
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    transition: 1.5s;
+    justify-content: space-between;
+    background-color: rgba(154, 128, 99, 1);
+  }
+  .image-card:hover .extra-things-card {
+    bottom: 16.4%;
+  }
+  .like-search-icon {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 12px;
+    font-size: 2.4rem;
+    background-color: transparent;
+  }
+  .shop-now-button {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 8px 10px;
+    background-color: transparent;
+  }
+  .like-icon {
+    font-size: 1.9rem;
+    background-color: transparent;
+    margin: 15px;
+  }
+  .like-icon:hover {
+    cursor: pointer;
+    color: white;
+  }
+  .shop-now-det {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+  }
+  .shopping-bag-icon {
+    font-size: 1.9rem;
+    margin-right: 22px;
+  }
+  .card-details {
+    height: 15%;
+  }
+  .first-heading {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0px 12px;
+  }
+  .first-heading span {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  

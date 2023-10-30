@@ -6,3 +6,7 @@
 body{
     font-family:'Segoe UI', Tahoma,  Verdana, sans-serif ;
 }
+
+.main-child1{
+    display: flex;
+}
