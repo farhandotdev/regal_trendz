@@ -18,9 +18,12 @@ This README  section showcases the UI/UX design contributions by Mohammad Shoaib
 
 ## Technologies Used
 
-- **Design Tool:** <img src="https://www.figma.com/community/file/930374612850356203/figma-svg-logo-wordmark" alt="Figma Logo" width="100">
+- **Design Tool:**
+<img src="https://github.com/Shoaibxaif/regal_trendz/assets/91245904/ce827850-df9d-4347-85bd-77ac65f630ca" alt="Figma Logo" width="100">
 
-- Figma Link ["https://www.figma.com/file/sVfL4oE4ZOogNXNBz04WLb/Kayra?type=design&node-id=11%3A3161&mode=design&t=LZwJecuECuzhmhVr-1"]
+
+[Figma Link](https://www.figma.com/file/sVfL4oE4ZOogNXNBz04WLb/Kayra?type=design&node-id=11%3A3161&mode=design&t=LZwJecuECuzhmhVr-1)
+
 
 # Development - Regal Trendz 
 
