@@ -23,20 +23,6 @@ This README  section showcases the UI/UX design contributions by Mohammad Shoaib
 
 # Development - Regal Trendz 
 
-## Introduction
-
-Welcome to the Regal Trendz . This document will provide you with essential information to help you get started and make meaningful contributions to our project as a  developer..
-
-## Project Overview
-
-Our project is Regal Trendz, an e-commerce website with a focus on delivering a seamless and elegant shopping experience to our users. Your primary responsibilities as a developer include implementing the user interface based on the designs provided by Mohammad Shoaib and ensuring that it is responsive, accessible, and visually appealing.
-
-## Design Integration
-
-The design for Regal Trendz is available on Figma. You can access the design by following this link: [Figma Design](https://www.figma.com/file/sVfL4oE4ZOogNXNBz04WLb/Kayra?type=design&node-id=11%3A3161&mode=design&t=LZwJecuECuzhmhVr-1).
-
-Please familiarize yourself with the design and refer to it during your development work. Consistency with the design is crucial to maintaining the quality of the user experience.
-
 ## Getting Started
 
 Follow these steps to get started with your development work:
