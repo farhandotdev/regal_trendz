@@ -94,7 +94,7 @@ const Card = () => {
                     fontSize=""
                     style={iconStyle}
                   />
-                  <SearchIcon className="like-icon" fontSize="" />
+                 
                 </div>
                 <div className="shop-now-button">
                   <LocalMallIcon

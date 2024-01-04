@@ -1,16 +1,20 @@
 .Slidehome{
-    height: 65vh;
-    width: 100%;
-    /* background-color: red; */
+    height: 400px;
+    width: 99%;
     background-color: var(--light);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    border: 2px solid red;
     overflow: hidden;
 }
 .Carousel-home{
-    height: 50%;
-    width: 90%;
 
+    height: 80%;
+    width: 92%;
 }
+.carousel-image img{
+    width: 10rem;
+    height: 24rem;
+}
+/* .carousel .thumb {
+    visibility: hidden;
+} */

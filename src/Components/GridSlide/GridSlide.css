@@ -1,6 +1,6 @@
 .gridSlide{
     height: 65vh;
-    width: 100%;
+    width: 97%;
     background-color:var(--light);
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 .gridslide-child{
     height: 90%;
     width: 31%;
-    margin: 9px;
+    margin: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
     justify-content: space-between;
     align-items: center;  
     width: 100%;
-    height: 48%;
+    height: 49%;
 }
 .ch1{
     border: 2px solid var(--darklight);   
@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48%;
+    width: 49%;
     height: 99%;
 }
 .grand-child img{
@@ -57,9 +57,15 @@
 @media screen and (max-width:900px){
     .gridSlide{
         flex-direction: column;
+        height: 140vh;
     }
     .gridslide-child{
         width: 90%;
         height:31% ;
     }
+}
+@media screen and (max-width:400px){
+  .gridSlide{
+    height: 140vh;
+  }
 }

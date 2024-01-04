@@ -1,0 +1,104 @@
+footer{
+    height: 40rem;
+    width: 99%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    height: 28%;
+    width: 85%;
+    background-color:#ffffffba;;
+    color: white;
+    position:relative;
+    top:-6rem;
+    transition: all ease 0.6s; 
+}
+.footer-container1 h2:hover{
+   color: var(--dark);
+}
+.footer-container1 button{
+    background-color: var(--darklight);
+    color: #ffffff;
+    padding: 7px 12px ;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    transition: all ease 1s;
+    
+}
+.footer-container1 button:hover{
+    background-color: black;
+    color: var(--light);
+    cursor: pointer;
+}
+.footer-container{
+    height: 80%;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+    color: var(--darklight);
+    background-color:var(--darklight);
+
+}
+.footer-elementbox{
+    height: 55%;
+    width: 85%;
+    display: flex;
+    padding: 12px;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #ffffff;
+    background-color:var(--light);
+    position: relative;
+    bottom: 3rem;
+
+}
+
+
+.footer-container .footer-content1,
+.footer-container .footer-content2,
+.footer-container .footer-content3,
+.footer-container .footer-content4{
+    height: 65%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 12px;
+    margin-bottom: 3rem; 
+}
+.footer-content4 .socialicon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 15%;
+
+}
+
+.footer-container h2{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footer-elementbox h2:hover{
+    color: var(--darklight);
+}
+.footer-container .footer-element{
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.footer-container .footer-element:hover{
+    color:var(--darklight);
+}
+

@@ -1,0 +1,109 @@
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light);
+}
+
+  .card-box {
+    width: 15.6rem;
+    background-color: white;
+    border: 1px solid rgba(49, 49, 49, 0.308);
+}
+  
+
+.image-card {
+    width: 100%;
+    cursor: pointer;
+    background-color: black;
+  }
+  
+  .image-card img {
+    transition: 0.7s;
+  }
+  .card-hover-box {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    bottom: 15%;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.297);
+  }
+  .card-box:hover .card-hover-box {
+    animation: slidup 0.7s ease;
+    visibility: visible;
+  }
+  .image-card img:hover{
+       scale: 1.1;
+       opacity: 0.9;
+
+  }
+  .card-hover-box button {
+    padding: 6px 6px ;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.742);
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 7px;
+    
+  }
+  .card-hover-box button:hover{
+    background-color: rgba(255, 255, 255, 0.805);
+    color: black;
+  }
+  .card-hover-element {
+    margin-right: 12px;
+    
+  }
+
+   .like-icon:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .card-details {
+    padding: 5px 0;
+
+  }
+  .card-details h4{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+ 
+  @keyframes slidup {
+    0%{
+        opacity: 0;
+        transform: translateY(98px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-price-off{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  margin-top: 5px;
+  /* border: 2px solid red; */
+}
+.card-price-off p{
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  /* border: 2px solid ; */
+/* text-decoration: line-through; */
+}
+.card-price-off p i{
+  font-size: 12px;
+  font-weight: 400;
+margin-left: 10px;
+}

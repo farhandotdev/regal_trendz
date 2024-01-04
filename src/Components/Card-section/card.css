@@ -1,5 +1,5 @@
 .Main-container-parent {
-    width: 81vw;
+    width: 72vw;
   }
   .main-container-child {
     height: 100%;
@@ -7,13 +7,13 @@
   .card-heading-part {
     width: 100%;
     margin-top: 12px;
-    padding: 12px 12px;
+    padding: 12px 64px;
     display: flex;
     justify-content: space-between;
   }
   .card-heading-part h3,
   h6 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   .card-main-parent {
     height: 90%;
