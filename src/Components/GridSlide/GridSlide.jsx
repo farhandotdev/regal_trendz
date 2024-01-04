@@ -20,7 +20,8 @@ const GridSlide = () => {
         </div>
 
       </div>
-      <div className="gridslide-child child3"><img src={"https://images.pexels.com/photos/9218538/pexels-photo-9218538.jpeg?auto=compress&cs=tinysrgb&w=600"} alt="" /></div>
+      <div className="gridslide-child child3"><img src={"https://images.pexels.com/photos/9218538/pexels-photo-9218538.jpeg?auto=compress&cs=tinysrgb&w=600"} alt="" />
+      </div>
     </div>
 
   )

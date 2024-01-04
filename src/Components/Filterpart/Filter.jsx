@@ -1,5 +1,6 @@
 import React from "react";
 import "./filter.css";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
@@ -8,20 +9,15 @@ const Filter = () => {
     <div className="filter-section-main-class">
       <div className="filter-parent">
         <div className="filter-part-child">
-          <div className="heading-part-filter">
-            <h3>Filters</h3>
-          </div>
-          <hr className="hr-tag" color="gray" />
           <div className="category-parent">
-            <div className="category-main-child">
-              Category
-              <ArrowDropDownIcon className="drop-down-icon" />
-            </div>
             <div className="category-part-search-part">
-              <input type="text" placeholder="Search.." />
+              <input type="text" placeholder="Search here..." />
               <span className="span-search-part">
                 <SearchOutlinedIcon className="search-icon-search-part" />
               </span>
+            </div>
+            <div className="category-main-child">
+              Category
             </div>
             <div className="list-items-category-part">
               <div className="input-checkbox-category-part">
@@ -107,28 +103,16 @@ const Filter = () => {
             </div>
             <div className="Gender-parent-category">
                <div className="Gender-main-child">
-                Gender Class
-                <ArrowDropDownIcon className="drop-down-icon" />
+                Gender Class  <ArrowDropDownIcon className="arrowdrop"/>
                 </div>
-                <div className="gender-section-buttons">
-                  <div className="first-section-buttons">
-                    <button className='gender-btn'>
-                      Men's
-                    </button>
-                    <button className='gender-btn'>
-                      Women's
-                    </button>
-                  </div>
-                  <div className="first-section-buttons">
-                    <button className='gender-btn'>
-                      Kids
-                    </button>
-                    <button className='gender-btn'>
-                      Other's
-                    </button>
-                  </div>
-                </div>
-
+                
+                <ul>
+                  <li> <ArrowRightIcon className="arrowdrop"/> Men's</li>
+                  <li> <ArrowRightIcon className="arrowdrop"/>Women's</li>
+                  <li> <ArrowRightIcon className="arrowdrop"/><span>Kid's</span></li>
+                  <li> <ArrowRightIcon className="arrowdrop"/>Other's</li>
+                </ul>
+      
             </div>
              
           </div>

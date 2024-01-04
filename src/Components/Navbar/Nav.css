@@ -12,20 +12,22 @@
     align-items: center;
     justify-content: space-around;
 }
-.n1{
+.nav-box1{
    width: 11%;
 }
-.n2{
+.nav-box2{
     width: 40%;
 }
-.n3{
+.nav-box3{
     width: 11%;
 
 }
-.n4{
+.nav-box4{
     width: 0%;
     display: none;
+    cursor: pointer;
 }
+
 .Navbar-components ul{
     width: 85%;
   display: flex;
@@ -36,6 +38,7 @@
     list-style: none;
 }
 .Navbar-components ul li a{
+    background-color: transparent;
     text-decoration: none;
     color:var(--dark);
     font-size: 15px;
@@ -43,23 +46,75 @@
     padding: 5px 12px;
     cursor: pointer;
     border-radius: 3px; 
+    transition: 0.5s;
 }
 .Navbar-components ul li a:hover{
-    /* background-color:rgba(0, 0, x0, 0.648); */
     color: var(--light);
 }
-.n3 .icon{
+.nav-box3 .icon{
     cursor: pointer;
     font-size:15px;
     font-weight: 600;
 }
-.n3 .icon:hover{
+.nav-box3 .icon:hover{
     color: var(--light);
 
 }
 
+/* new vertical navbar for phone size */
+.nav-box5{
+    top: 5rem;
+    right: 0rem;
+    position: absolute;
+    width: 22rem;
+    height: 20rem;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darklight);
+}
+.nav-box5 ul{
+    width: 90%;
+    height: 88%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding : 5px 3px;
+}
+.nav-box5 ul li {
+    list-style: none;
+}
+.nav-box5 ul li a{
+    text-decoration: none;
+    color:var(--dark);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 3px; 
+    transition: 0.5s;
+
+}
+ 
+.nav-box5 ul li a:hover{
+    color: var(--light);
+}
 
 /* For ResponsiveNess............................... */
+@media screen and (max-width: 1380px){
+    .navbar-compo{
+        padding: 1rem 5rem;
+    }
+}
+ 
+@media screen and (max-width: 1189px){
+    .navbar-compo{
+        padding: 1rem 4rem;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .Navbar-components ul{
         width: 90%;
@@ -69,27 +124,44 @@
     }
 }
 @media screen and (max-width:900px){
-    .n2 ul{
+    .nav-box2 ul{
         display: none;
     }
-    .n2{
+    .nav-box2{
         width: 30%;
     }
-    .n3 div{
+    .nav-box3 div{
        padding: 4px;
     }
-    .n4{
+    .nav-box4{
         display: flex;
         width: 10%;
     }
+    .nav-box5{
+        width: 100%;
+        margin-top: -17px;
+    }
+    
 }
-@media screen  and (max-width:500){
-   
-    .n2{
+@media screen  and (max-width:500px){
+    .Navbar{
+        height: 4rem;
+    }
+    .nav-box1 {
+        width: 27%;
+        font-size: 13px;
+    }
+    .nav-box2{
         width: 25%;
+        font-size:23px;
     }
-    .n3{
+    .nav-box3{
         width: 20%;
+        font-size:23px;
     }
+    .gridSlide {
+        height: 90vh;
+    }
+    
 
 }

@@ -1,0 +1,69 @@
+.FilterSec-container{
+    height: 80rem;
+    width: 91%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+.FilterSec-container .FilterPart{
+    width:21% ;
+    height: 96%;
+    background-color: var(--darklight);
+}
+ .FilterSec-container .AddCardPart{
+    width: 22%;
+    height: 96%;
+}
+
+.FilterSec-container .CardPart{
+    width: 56%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+.CardPart span{
+    display: flex;
+    align-items: flex-start;
+    width: 99%;
+    height: 3%;
+}
+.CardPart span h4{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.CardPart .cardcollecter{
+    width: 100%;
+    height: 97%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+    overflow-y: scroll;
+}
+.CardPart .cardcollecter::-webkit-scrollbar {
+    display: none;
+}
+.AddCardPart .addpart{
+    margin-top: 9px;
+    margin-left: 4px;
+    height: 37%;
+    width: 97%;
+    background-color: white;
+  
+}
+@media screen and (max-width:1150px){
+ .AddCardPart{
+    display: none;
+ }
+ .FilterSec-container .CardPart{
+    width: 78%;
+ }
+}
+@media screen and (max-width:400px){
+ 
+}
