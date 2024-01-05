@@ -1,167 +1,46 @@
-.Navbar{
-    background-color:var(--darklight);
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.navbar-container {
+  padding: 0 3%;
+  padding-bottom: 5px;
 }
-.Navbar-components{
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.nav-box1{
-   width: 11%;
-}
-.nav-box2{
-    width: 40%;
-}
-.nav-box3{
-    width: 11%;
-
-}
-.nav-box4{
-    width: 0%;
-    display: none;
-    cursor: pointer;
-}
-
-.Navbar-components ul{
-    width: 85%;
+.navbar-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px 25px;
 }
-.Navbar-components ul li{
-    list-style: none;
+.navbar-logo h1 {
+  letter-spacing: 8px;
+  font-size: 50px;
+  font-weight: 400;
 }
-.Navbar-components ul li a{
-    background-color: transparent;
-    text-decoration: none;
-    color:var(--dark);
-    font-size: 15px;
-    font-weight: 600;
-    padding: 5px 12px;
-    cursor: pointer;
-    border-radius: 3px; 
-    transition: 0.5s;
+.navbar-search-items-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
-.Navbar-components ul li a:hover{
-    color: var(--light);
+.search-items {
+  border: 1px solid rgba(0, 0, 0, 0.389);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
 }
-.nav-box3 .icon{
-    cursor: pointer;
-    font-size:15px;
-    font-weight: 600;
+.search-items input {
+  padding: 8px 10px;
+  letter-spacing: 2px;
+  font-size: 10px;
+  width: 95%;
+  border: none;
+  outline: none;
 }
-.nav-box3 .icon:hover{
-    color: var(--light);
-
+.navigation-items ul {
+  display: flex;
 }
-
-/* new vertical navbar for phone size */
-.nav-box5{
-    top: 5rem;
-    right: 0rem;
-    position: absolute;
-    width: 22rem;
-    height: 20rem;
-    /* display: flex; */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--darklight);
-}
-.nav-box5 ul{
-    width: 90%;
-    height: 88%;
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    flex-direction: column;
-    padding : 5px 3px;
-}
-.nav-box5 ul li {
-    list-style: none;
-}
-.nav-box5 ul li a{
-    text-decoration: none;
-    color:var(--dark);
-    font-size: 15px;
-    font-weight: 600;
-    padding: 5px 12px;
-    cursor: pointer;
-    border-radius: 3px; 
-    transition: 0.5s;
-
-}
- 
-.nav-box5 ul li a:hover{
-    color: var(--light);
-}
-
-/* For ResponsiveNess............................... */
-@media screen and (max-width: 1380px){
-    .navbar-compo{
-        padding: 1rem 5rem;
-    }
-}
- 
-@media screen and (max-width: 1189px){
-    .navbar-compo{
-        padding: 1rem 4rem;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .Navbar-components ul{
-        width: 90%;
-    }
-    .Navbar-components ul li a{
-        padding: 3px 6px;
-    }
-}
-@media screen and (max-width:900px){
-    .nav-box2 ul{
-        display: none;
-    }
-    .nav-box2{
-        width: 30%;
-    }
-    .nav-box3 div{
-       padding: 4px;
-    }
-    .nav-box4{
-        display: flex;
-        width: 10%;
-    }
-    .nav-box5{
-        width: 100%;
-        margin-top: -17px;
-    }
-    
-}
-@media screen  and (max-width:500px){
-    .Navbar{
-        height: 4rem;
-    }
-    .nav-box1 {
-        width: 27%;
-        font-size: 13px;
-    }
-    .nav-box2{
-        width: 25%;
-        font-size:23px;
-    }
-    .nav-box3{
-        width: 20%;
-        font-size:23px;
-    }
-    .gridSlide {
-        height: 90vh;
-    }
-    
-
+.navigation-items ul li {
+  list-style: none;
+  margin-inline: 35px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
 }
