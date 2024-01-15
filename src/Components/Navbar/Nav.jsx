@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import PersonIcon from "@mui/icons-material/Person";
 import SearchIcon from "@mui/icons-material/Search";
@@ -7,20 +7,12 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./Nav.css";
 function Nav() {
-  function NewMenu() {
-    var content = document.getElementById("nav-box5");
-    var iconshow = document.getElementById("nav-box3");
-    if (content.style.display == "none") {
-      content.style.display = "flex ";
-      iconshow.style.display = "none";
-    } else {
-      content.style.display = "none";
-      iconshow.style.display = "flex";
-    }
-  }
-
+  const [isSticky, setIsSticky] = useState(true);
+  useEffect(() => {
+    setIsSticky(true);
+  }, []);
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-navigation">
         <div className="navbar-logo">
           <h1>RegalTrendZ</h1>
@@ -42,7 +34,7 @@ function Nav() {
           <ul>
             <li>MEN</li>
             <li>WOMEN</li>
-            <li>OTHERS</li>
+            <li>KIDS</li>
           </ul>
         </div>
       </div>

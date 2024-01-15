@@ -5,22 +5,22 @@ import { Carousel } from 'react-responsive-carousel';
 import  Cloth from "../../assets/cloth.jpg"
 import  Cloth2 from "../../assets/cloth2.jpg"
 
-const Slider = () => {
+const Slider = ({img_}) => {
     return (
         <div className='Slidehome'>
 
             <Carousel className='Carousel-home' showStatus= {false} showArrows ={false} showThumbs = {false} autoPlay ={true} interval={2000} >
                 <div className='carousel-image'> 
-                    <img src={Cloth2} />
+                    <img src={img_} />
                 </div>
                 <div className='carousel-image'>
-                    <img src={Cloth2} />
+                    <img src={img_} />
                 </div>
                 <div className='carousel-image'>
-                    <img src={Cloth2} />
+                    <img src={img_} />
                 </div>
                 <div className='carousel-image'>
-                    <img src={Cloth2} />
+                    <img src={img_} />
                 </div>
             </Carousel>
         </div>

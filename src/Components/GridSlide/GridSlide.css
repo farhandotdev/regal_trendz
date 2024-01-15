@@ -1,7 +1,5 @@
 .gridSlide{
     height: 65vh;
-    width: 97%;
-    background-color:var(--light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +7,11 @@
 .gridslide-child{
     height: 90%;
     width: 31%;
-    margin: 4px;
+    margin: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: 2px solid var(--darklight);   
 } 
   .gridslide-child img{
     height: 100%;
@@ -30,10 +27,7 @@
     width: 100%;
     height: 49%;
 }
-.ch1{
-    border: 2px solid var(--darklight);   
 
-}
 .child-element img{
     height: 100%;
     width: 100%;
@@ -41,7 +35,6 @@
 
 
 .grand-child{
-    border: 2px solid var(--darklight);
     display: flex;
     justify-content: center;
     align-items: center;

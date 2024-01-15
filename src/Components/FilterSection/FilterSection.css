@@ -1,69 +1,62 @@
-.FilterSec-container{
-    height: 80rem;
-    width: 91%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 1rem;
+.FilterSec-container {
+  padding: 0 3%;
+
+  /* height: 80rem; */
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.FilterSec-container .FilterPart{
-    width:21% ;
-    height: 96%;
-    background-color: var(--darklight);
+.FilterSec-container .FilterPart {
+  width: 80%;
+  display: flex;
 }
- .FilterSec-container .AddCardPart{
-    width: 22%;
-    height: 96%;
+.category-filter {
+  width: 30%;
+  border: 1px solid rgba(16, 16, 16, 0.282);
+}
+.card-display-section {
+  width: calc(100% - 30%);
+  padding: 0 10px;
+}
+.card-display-section .total-item {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.429);
+  border-top: 1px solid rgba(128, 128, 128, 0.429);
+  padding: 20px 8px;
+  font-size: 12px;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+}
+.FilterSec-container .CardPart {
+  /* border: 2px solid red; */
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.FilterSec-container .CardPart{
-    width: 56%;
-    height: 96%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  
+.FilterSec-container .AddCardPart {
+  width: calc(100% - 80%);
 }
-.CardPart span{
-    display: flex;
-    align-items: flex-start;
-    width: 99%;
-    height: 3%;
+
+
+.AddCardPart .addpart {
+  border: 1px solid rgba(16, 16, 16, 0.282);
+  margin-top: 5px;
 }
-.CardPart span h4{
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 1px;
+.AddCardPart .addpart h3 {
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
-.CardPart .cardcollecter{
-    width: 100%;
-    height: 97%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 6px;
-    overflow-y: scroll;
-}
-.CardPart .cardcollecter::-webkit-scrollbar {
+
+@media screen and (max-width: 1150px) {
+  .AddCardPart {
     display: none;
-}
-.AddCardPart .addpart{
-    margin-top: 9px;
-    margin-left: 4px;
-    height: 37%;
-    width: 97%;
-    background-color: white;
-  
-}
-@media screen and (max-width:1150px){
- .AddCardPart{
-    display: none;
- }
- .FilterSec-container .CardPart{
+  }
+  .FilterSec-container .CardPart {
     width: 78%;
- }
+  }
 }
-@media screen and (max-width:400px){
- 
+@media screen and (max-width: 400px) {
 }

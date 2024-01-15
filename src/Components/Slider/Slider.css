@@ -1,20 +1,12 @@
-.Slidehome{
-    height: 400px;
-    width: 99%;
-    background-color: var(--light);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+.Slidehome {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-.Carousel-home{
-
-    height: 80%;
-    width: 92%;
+.Carousel-home {
+  width: 94%;
 }
-.carousel-image img{
-    width: 10rem;
-    height: 24rem;
+.carousel-image img {
+  width: 10rem;
+  height: 24rem;
 }
-/* .carousel .thumb {
-    visibility: hidden;
-} */
