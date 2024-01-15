@@ -1,21 +1,16 @@
-
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home/Home";
-import Filter from "./Components/Filterpart/Filter";
-import Card from "./Components/Card-section/Card";
-import { ClassNames } from "@emotion/react";
-import Card1 from "./Components/Card-section/Card1";
-import AddToCard from "./Components/AddCardSec/AddToCard";
+import AllRoutes from "./AllRoutes";
 
 function App() {
   return (
-    <div className="main">
-    <div className="main-child">
-    <Home/>
-    </div>  
+    <div className="App">
+      <BrowserRouter>
+        <AllRoutes />
+      </BrowserRouter>
     </div>
   );
-  }
+}
 
 export default App;

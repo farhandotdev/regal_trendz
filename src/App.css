@@ -1,12 +1,30 @@
-:root{
-    --dark: black;
-    --light: #f4e8e1;
-    --darklight: #d9b29c;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif ;
+:root {
+  --dark: black;
+  --light: #f4e8e1;
+  --darklight: #d9b29c;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
-.main-child1{
-    display: flex;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #626262;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

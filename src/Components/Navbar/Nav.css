@@ -1,23 +1,25 @@
 .navbar-container {
   padding: 0 3%;
   padding-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f7f1e3;
 }
 .navbar-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 25px;
+  padding: 5px 20px;
 }
 .navbar-logo h1 {
   letter-spacing: 8px;
-  font-size: 50px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 500;
 }
 .navbar-search-items-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 .search-items {
   border: 1px solid rgba(0, 0, 0, 0.389);
@@ -27,9 +29,9 @@
   width: 60%;
 }
 .search-items input {
-  padding: 8px 10px;
+  padding: 10px 10px;
   letter-spacing: 2px;
-  font-size: 10px;
+  font-size: 12px;
   width: 95%;
   border: none;
   outline: none;
@@ -43,4 +45,14 @@
   letter-spacing: 2px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

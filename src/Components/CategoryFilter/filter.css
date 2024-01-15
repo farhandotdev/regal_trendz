@@ -1,0 +1,98 @@
+.filter-container {
+  margin-top: 12px;
+}
+
+.filter-category {
+  padding: 12px 9px;
+  margin-top: 0px;
+  margin-left: 12px;
+  background-color: transparent;
+}
+.category-main-child {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0 0 4px 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+}
+.category-part-search-part {
+  border: 1px solid rgb(124, 84, 84);
+  margin-top: 2px;
+  padding: 0px 5px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-part-search-part input {
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  padding: 5px 3px;
+  letter-spacing: 1px;
+  outline: none;
+}
+.category-part-search-part input::placeholder {
+  color: black;
+}
+.span-search-part {
+  margin-top: 5px;
+}
+
+.list-items-category-part {
+  margin-top: 4px;
+  padding: 12px 0px;
+}
+.input-checkbox-category-part {
+  padding: 3px 4px;
+  display: flex;
+  align-items: center;
+}
+.input-checkbox-category-part .input-checkbox {
+  width: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.input-checkbox-category-part label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.Gender-parent-category {
+  height: 30%;
+  padding: 12px 0px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.Gender-main-child{
+  cursor: pointer;
+}
+.Gender-parent-category ul {
+  margin-top: 12px;
+}
+
+.Gender-parent-category ul li {
+  font-size: 14px;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  list-style: none;
+  cursor: pointer;
+  margin-inline: 10px;
+}
+
+.Gender-parent-category .arrowdrop {
+  position: relative;
+  top: 5px;
+}
+.Gender-parent-category ul li .arrowdrop {
+  position: relative;
+  top: 8px;
+}

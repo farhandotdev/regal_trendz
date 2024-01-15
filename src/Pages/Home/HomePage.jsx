@@ -1,30 +1,26 @@
 import React from "react";
+import "./HomePage.css";
 import Nav from "../../Components/Navbar/Nav";
 import GridSlide from "../../Components/GridSlide/GridSlide";
-import Button from "@mui/material/Button";
 import Slider from "../../Components/Slider/Slider";
-import Login from "../Login/Login";
-import "./Home.css";
 import FilterSection from "../../Components/FilterSection/FilterSection";
 import Footer from "../../Components/Footer/Footer";
+import ph from "../../assets/cloth.jpg";
+import Cloth2 from "../../assets/cloth2.jpg";
 
 const Home = () => {
   return (
-     
+    <div className="app-container">
+      <Nav />
       <div className="Homecontainer">
-         <Nav />
-        <div className="Homepage">
-          <GridSlide />
-          <Slider />
-        </div>
-        <div className="homepage2">
-          <FilterSection />
-        </div>
-        <div className="homepage3">
-          <Footer />
-        </div>
+        <Slider img_={Cloth2} />
+        <GridSlide />
+        <Slider img_={ph} />
+        <FilterSection />
+        <Slider img_={Cloth2} />
       </div>
-
+      {/* <Footer /> */}
+    </div>
   );
 };
 

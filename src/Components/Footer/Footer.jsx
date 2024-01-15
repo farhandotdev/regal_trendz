@@ -9,11 +9,11 @@ const Footer = () => {
   return (
     <footer>
     <div className="footer-container">
-       <div className="footer-container1">
+       {/* <div className="footer-container1">
         <h2> Thanks for visiting my Website </h2>
         <button>Back to Home</button>
 
-       </div>
+       </div> */}
 
        <div className="footer-elementbox">
          <div className="footer-content1">

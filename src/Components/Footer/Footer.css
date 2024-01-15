@@ -5,6 +5,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: black;
 }
 .footer-container1{
     display: flex;
@@ -13,7 +14,7 @@ footer{
     flex-direction: column; 
     height: 28%;
     width: 85%;
-    background-color:#ffffffba;;
+    /* background-color:#ffffffba;; */
     color: white;
     position:relative;
     top:-6rem;
@@ -23,7 +24,7 @@ footer{
    color: var(--dark);
 }
 .footer-container1 button{
-    background-color: var(--darklight);
+    /* background-color: var(--darklight); */
     color: #ffffff;
     padding: 7px 12px ;
     border: none;
@@ -33,7 +34,7 @@ footer{
     
 }
 .footer-container1 button:hover{
-    background-color: black;
+    /* background-color: black; */
     color: var(--light);
     cursor: pointer;
 }
@@ -46,7 +47,7 @@ footer{
     padding: 12px;
     align-items: center;
     color: var(--darklight);
-    background-color:var(--darklight);
+    /* background-color:var(--darklight); */
 
 }
 .footer-elementbox{
@@ -57,7 +58,7 @@ footer{
     justify-content: space-around;
     align-items: flex-end;
     color: #ffffff;
-    background-color:var(--light);
+    /* background-color:var(--light); */
     position: relative;
     bottom: 3rem;
 
