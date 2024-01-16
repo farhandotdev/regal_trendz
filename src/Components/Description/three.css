@@ -1,0 +1,56 @@
+.component-parent {
+  display: flex;
+  flex-direction: column;
+}
+.heading-part-details {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  background-color: transparent;
+  align-items: flex-end;
+  /* align-items: center; */
+  cursor: pointer;
+}
+.common-name {
+  background-color: transparent;
+}
+
+.common-name h1 {
+  font-size: 1.3rem;
+  background-color: transparent;
+  color: #000;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+
+.common-name h1:hover,
+.common-name h1:active {
+  /* border-bottom: 2px solid gold; */
+  text-decoration: underline;
+  text-decoration-color: bisque;
+}
+.description-details {
+  margin-inline-start: 8px;
+}
+
+.horizontal-line-tag {
+  color: gray;
+}
+.paragraph-details {
+
+  display: flex;
+}
+.common-para {
+
+  background-color: transparent;
+  flex: 1;
+  font-size: 1.2rem;
+}
+.common-para P {
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  margin: 0;
+}
