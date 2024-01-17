@@ -7,6 +7,8 @@ import FilterSection from "../../Components/FilterSection/FilterSection";
 import Footer from "../../Components/Footer/Footer";
 import ph from "../../assets/cloth.jpg";
 import Cloth2 from "../../assets/cloth2.jpg";
+// import ProductPage from "../../Components/Product/ProductPage";
+
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
         <Slider img_={ph} />
         <FilterSection />
         <Slider img_={Cloth2} />
+        {/* <ProductPage/> */}
       </div>
       {/* <Footer /> */}
     </div>
