@@ -112,9 +112,7 @@ const ProductPage = () => {
         </div>
       </div>
       <div className="product-reviews">
-        <div className="details-child">
           <Threethings />
-        </div>
       </div>
       <div className="related-products">
         <div className="heading">

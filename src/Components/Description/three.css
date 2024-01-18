@@ -1,4 +1,4 @@
-.component-parent {
+  .component-parent {
   display: flex;
   flex-direction: column;
 }
@@ -7,13 +7,9 @@
   display: flex;
   justify-content: space-between;
   width: 40%;
-  background-color: transparent;
-  align-items: flex-end;
   cursor: pointer;
 }
-.common-name {
-  background-color: transparent;
-}
+
 
 .common-name h1 {
   font-size: 1.3rem;

@@ -9,17 +9,17 @@ const Rating = ({ rating, numReviews }) => {
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<IoIosStar key={i} color="blue" />);
+      stars.push(<IoIosStar key={i} color="black" />);
     }
 
     if (hasHalfStar) {
-      stars.push(<IoIosStarHalf key="half" color="blue" />);
+      stars.push(<IoIosStarHalf key="half" color="black" />);
     }
 
     const remainingStars = 5 - stars.length;
 
     for (let i = 0; i < remainingStars; i++) {
-      stars.push(<IoIosStar key={`empty-${i}`} color="blue" />);
+      stars.push(<IoIosStar key={`empty-${i}`} color="grey" />);
     }
 
     return stars;
