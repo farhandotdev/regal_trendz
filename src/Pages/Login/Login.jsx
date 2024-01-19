@@ -1,136 +1,75 @@
-import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import React from 'react';
+import image from './img.jpg'
+import './Login.css'
 
-function Copyright(props) {
+const Login = () => {
   return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
-// TODO remove, this demo shouldn't need to reset the theme.
-
-const defaultTheme = createTheme();
-
-export default function SignInSide() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
-
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <Grid container component="main" sx={{ height: "100vh" }}>
-        <CssBaseline />
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/2249249/pexels-photo-2249249.jpeg?auto=compress&cs=tinysrgb&w=728&h=932&dpr=1)",
-          }}
-        />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+    <>
+      <div className="container">
+        <input type="checkbox" id="flip" />
+        <div className="cover">
+          <div className="front">
+            <img src={image} alt="" />
            
-            <Typography component="h1" variant="h5">
-            "Style is a way to say who you are without having to speak" 
-            </Typography>
-            <Typography component="h2" variant="h5">
-              Lets get's started
-            </Typography>
-            <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 1 }}
-            >
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-              />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Sign In
-              </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid>
-              <Copyright sx={{ mt: 5 }} />
-            </Box>
-          </Box>
-        </Grid>
-      </Grid>
-    </ThemeProvider>
+          </div>
+          <div className="back">
+            <img className="backImg" src={image} alt="" />
+          </div>
+        </div>
+        <div className="forms">
+          <div className="form-content">
+            <div className="login-form">
+              <div className="title">Login</div>
+              <form action="#">
+                <div className="input-boxes">
+                  <div className="input-box">
+                    <i className="fas fa-envelope"></i>
+                    <input type="text" placeholder="Enter your email" required />
+                  </div>
+                  <div className="input-box">
+                    <i className="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required />
+                  </div>
+                  <div className="text forget"><a href="#">Forgot password?</a></div>
+                  <div className="button input-box">
+                    <input type="submit" value="Submit" />
+                  </div>
+                  <div className="text sign-up-text">Don't have an account? <label htmlFor="flip">Signup now</label></div>
+                </div>
+              </form>
+            </div>
+            <div className="signup-form">
+              <div className="title">Signup</div>
+              <form action="#">
+                <div className="input-boxes">
+                  <div className="input-box">
+                    <i className="fas fa-user"></i>
+                    <input type="text" placeholder="Enter your name" required />
+                  </div>
+                  <div className="input-box">
+                    <i className="fas fa-envelope"></i>
+                    <input type="text" placeholder="Enter your email" required />
+                  </div>
+                  <div className="input-box">
+                    <i className="fas fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required />
+                  </div>
+                  <div className="input-box">
+                    <i className="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm password" required />
+                  </div>
+                  <div className="button input-box">
+                    <input type="submit" value="Submit" />
+                  </div>
+                  <div className="text sign-up-text">Already have an account? <label htmlFor="flip">Login now</label></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default Login;
