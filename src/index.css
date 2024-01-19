@@ -4,3 +4,6 @@
     box-sizing: border-box;
     background-color: transparent;
 }
+p{
+    margin-bottom: 0rem;
+}

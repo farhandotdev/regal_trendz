@@ -13,26 +13,29 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--dark);
-
 }
 
 .Product-parent {
   width: 80%;
   display: flex;
   margin-top:22px ; 
-  
 }
-
+.product-child-1{
+  width: 35%;
+}
+/* .Carousel-image-part-1{
+  margin-top: 20px;
+} */
+.c-image{
+  margin-top: 20px;
+}
 .product-child-2 {
   color: #000;
-  padding: 25px  0px  0px 9rem;
+  padding: 20px  0px  0px 9rem;
 }
 
 
 
-.carousel-child .c-image {
-  margin-top: 25px;
-}
 
 
 .heading-price-product h5 {
@@ -70,10 +73,11 @@
   margin-bottom: 12px;
 }
 .product-cart-btns {
-  margin-top: 30px;
   display: flex;
+  margin-top: 12px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 .product-cart-controller {
   display: flex;
