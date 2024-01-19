@@ -1,6 +1,5 @@
-import React from "react";
-import { CCarousel, CImage, CCarouselItem } from "@coreui/react";
-import "@coreui/coreui/dist/css/coreui.min.css";
+  import { CCarousel, CImage, CCarouselItem } from "@coreui/react";
+ import "@coreui/coreui/dist/css/coreui.min.css";
 import Rating from "../Starrating/Rating"
 import Quantity from "../Properties/Quantity"
 import Threethings from "../Description/Threethings"
@@ -19,7 +18,7 @@ const ProductPage = () => {
     <div className="container-parent">
       <div className="Product-parent">
         <div className="product-child-1">
-          <CCarousel
+            <CCarousel
             controls
             transition="crossfade"
             className="carousel-images"
@@ -52,7 +51,7 @@ const ProductPage = () => {
                 alt="slide 3"
               />
             </CCarouselItem>
-          </CCarousel>
+          </CCarousel>  
         </div>
         <div className="product-child-2">
           <div className="heading-price-product">
@@ -112,7 +111,7 @@ const ProductPage = () => {
         </div>
       </div>
       <div className="product-reviews">
-          <Threethings />
+        <Threethings />
       </div>
       <div className="related-products">
         <div className="heading">
