@@ -1,105 +1,95 @@
-footer{
-    height: 40rem;
-    width: 99%;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
+.footer_container {
+  background-color: #2c4152;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 2rem;
+  height: 280px;
 }
-.footer-container1{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column; 
-    height: 28%;
-    width: 85%;
-    /* background-color:#ffffffba;; */
-    color: white;
-    position:relative;
-    top:-6rem;
-    transition: all ease 0.6s; 
+.footer_support h2{
+    font-size: 1.1rem;
 }
-.footer-container1 h2:hover{
-   color: var(--dark);
-}
-.footer-container1 button{
-    /* background-color: var(--darklight); */
-    color: #ffffff;
-    padding: 7px 12px ;
-    border: none;
-    border-radius: 3px;
-    letter-spacing: 2px;
-    transition: all ease 1s;
-    
-}
-.footer-container1 button:hover{
-    /* background-color: black; */
-    color: var(--light);
-    cursor: pointer;
-}
-.footer-container{
-    height: 80%;
-    width: 92%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 12px;
-    align-items: center;
-    color: var(--darklight);
-    /* background-color:var(--darklight); */
-
-}
-.footer-elementbox{
-    height: 55%;
-    width: 85%;
-    display: flex;
-    padding: 12px;
-    justify-content: space-around;
-    align-items: flex-end;
-    color: #ffffff;
-    /* background-color:var(--light); */
-    position: relative;
-    bottom: 3rem;
-
-}
-
-
-.footer-container .footer-content1,
-.footer-container .footer-content2,
-.footer-container .footer-content3,
-.footer-container .footer-content4{
-    height: 65%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
+.footer_support p{
     font-size: 12px;
-    margin-bottom: 3rem; 
-}
-.footer-content4 .socialicon{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 15%;
-
-}
-
-.footer-container h2{
-    transition: 0.5s;
+    letter-spacing:1px;
+    padding: 5px 0;
+    color: rgb(175, 173, 173);
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
-.footer-elementbox h2:hover{
-    color: var(--darklight);
+.footer_support p:hover{
+    text-decoration: underline;
+    color: rgb(203, 203, 203);
 }
-.footer-container .footer-element{
+.footer_contact h2{
+    font-size: 1.1rem;
+}
+.footer_contact p{
+    font-size: 12px;
+    letter-spacing:1px;
+    padding: 5px 0;
+    color: rgb(175, 173, 173);
     cursor: pointer;
-    transition: 0.5s;
-
+    transition: 0.2s ease-in-out;
 }
-.footer-container .footer-element:hover{
-    color:var(--darklight);
+.footer_contact p:hover{
+    text-decoration: underline;
+    color: rgb(203, 203, 203);
 }
 
+.footer_socialIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_socialIcon h2 {
+  font-size: 1.1rem;
+  }
+.social_icon_section {
+  width: 100%;
+}
+.footer_socialIcon .socialIcon {
+  display: flex;
+  justify-content: space-between;
+}
+.socialIcon_insta .insta_icon h2 {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.socialIcon_insta .insta_icon h2:hover {
+  color: red;
+}
+.socialIcon .twitter_icon h2{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.socialIcon .twitter_icon h2:hover{
+    color: rgb(20, 186, 251);
+}
+.socialIcon .facebook_icon h2{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.socialIcon .facebook_icon h2:hover{
+    color: rgba(0, 0, 255, 0.888);
+}
+.socialIcon .linkedIn_icon h2{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.socialIcon .linkedIn_icon h2:hover{
+    color: rgba(0, 0, 255, 0.888);
+}
+.socialIcon .telegram_icon h2{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.socialIcon .telegram_icon h2:hover{
+    color: rgb(20, 186, 251);
+}
+
+
+
+/* Footer Media Query */

@@ -1,40 +1,48 @@
 import React, { useState, useEffect } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 import PersonIcon from "@mui/icons-material/Person";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./Nav.css";
-function Nav() {
+function Nav({ handleNavigation }) {
   const [isSticky, setIsSticky] = useState(true);
   useEffect(() => {
     setIsSticky(true);
   }, []);
+
   return (
     <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-navigation">
         <div className="navbar-logo">
-          <h1>RegalTrendZ</h1>
+          <Link style={{ textDecoration: "none" }}>
+            <h1 onClick={(e) => handleNavigation("/")}>RegalTrendZ</h1>
+          </Link>
         </div>
         <div className="navbar-icons">
-          <PersonIcon style={{ marginInline: "25px", cursor: "pointer" }} />
-          <ShoppingCartIcon
-            style={{ marginInline: "25px", cursor: "pointer" }}
-          />
-          <FavoriteIcon style={{ marginInline: "30px", cursor: "pointer" }} />
+          <p className="profile_icon">
+            <PersonIcon style={{ cursor: "pointer" }} />
+          </p>
+          <p className="cart_icon">
+            <ShoppingCartIcon style={{ cursor: "pointer" }} />
+          </p>
+          <p className="fav_icon">
+            <FavoriteIcon style={{ cursor: "pointer" }} />
+          </p>
         </div>
       </div>
       <div className="navbar-search-items-navigation">
         <div className="search-items">
-          <input type="text" placeholder="SEARCH REAGALTENDZ.." />{" "}
+          <input type="text" placeholder="SEARCH REAGALTENDZ..." />{" "}
           <SearchIcon style={{ marginRight: "5px", cursor: "pointer" }} />
         </div>
         <div className="navigation-items">
           <ul>
-            <li>MEN</li>
-            <li>WOMEN</li>
-            <li>KIDS</li>
+            <li onClick={(e) => handleNavigation("/")}>HOME</li>
+            <li onClick={(e) => handleNavigation("men")}>MEN</li>
+            <li onClick={(e) => handleNavigation("women")}>WOMEN</li>
+            <li onClick={(e) => handleNavigation("kids")}>KIDS</li>
           </ul>
         </div>
       </div>

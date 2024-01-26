@@ -1,5 +1,6 @@
 .FilterSec-container {
   padding: 0 3%;
+  /* border: 2px solid ; */
 
   /* height: 80rem; */
   display: flex;
@@ -7,7 +8,8 @@
   margin-bottom: 1rem;
 }
 .FilterSec-container .FilterPart {
-  width: 80%;
+  /* width: 80%; */
+  /* border: 2px solid red; */
   display: flex;
 }
 .category-filter {
@@ -35,7 +37,8 @@
 }
 
 .FilterSec-container .AddCardPart {
-  width: calc(100% - 80%);
+  width: 80%;
+  /* border: 2px solid yellow; */
 }
 
 
@@ -48,6 +51,7 @@
   padding: 5px;
   letter-spacing: 2px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -55,7 +59,15 @@
     display: none;
   }
   .FilterSec-container .CardPart {
-    width: 78%;
+    width: 100%;
+  }
+  .card-display-section {
+    width: 100%;
+    border: 2px solid red;
+  }
+  .FilterSec-container .FilterPart {
+    width: 100%;
+    display: flex;
   }
 }
 @media screen and (max-width: 400px) {
