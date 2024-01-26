@@ -1,5 +1,6 @@
 import React from "react";
 import "./FilterSection.css";
+import { Link } from "react-router-dom";
 import Filter from "../../Components/CategoryFilter/Filter";
 import AddToCard from "../CartSection/CartSection";
 import DisplayCard from "../Cards/DisplayCard";
@@ -14,7 +15,9 @@ const FilterSection = () => {
         <div className="card-display-section">
           <p className="total-item">20,093 Items Found</p>
           <div className="CardPart ">
+            <Link to={'/productItemPage'}>
             <DisplayCard />
+            </Link>
             <DisplayCard />
             <DisplayCard />
             <DisplayCard />

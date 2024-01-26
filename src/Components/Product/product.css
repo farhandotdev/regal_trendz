@@ -1,14 +1,10 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: box-shadow;
-}
 :root {
   --dark: #ffff;
 }
 .container-parent{
   margin-top: 12px;
+  padding-top: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
