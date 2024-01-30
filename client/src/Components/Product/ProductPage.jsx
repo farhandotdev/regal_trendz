@@ -88,7 +88,7 @@ const ProductPage = () => {
 
             <div className="product-cart-btns">
               <div className="product-cart-controller">
-                <Quantity />
+                <Quantity backGround="#2c4152" />
               </div>
               <div className="btns">
                 <button className="btn-1">ADD TO CART</button>
