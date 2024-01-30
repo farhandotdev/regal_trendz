@@ -5,6 +5,7 @@ import Login from "./Pages/Login/Login";
 import ProductPage from "./Components/Product/ProductPage";
 import Checkout from "./Components/CheckoutPage/Checkout";
 import CartProduct from "./Components/CartProduct/CartProduct";
+import PaymentInfo from "./Components/CheckoutPage/PaymentInfo";
 
 const AllRoutes = ({ navigation }) => {
   const { pathname, search } = useLocation();
@@ -34,6 +35,7 @@ const AllRoutes = ({ navigation }) => {
       <Route path="/productItemPage" element={<ProductPage />} />
       <Route path = "/checkoutPage" element={<Checkout/>}/>
       <Route path = "/Cart" element={<CartProduct/>}/>
+      <Route path="/p" element={<PaymentInfo />} />
     </Routes>
   );
 };

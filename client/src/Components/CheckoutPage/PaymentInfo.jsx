@@ -1,31 +1,32 @@
-import React from 'react';
+import { useState } from 'react';
 import "./Checkout.css"
-import  useState  from 'react';
 import DebitcardInfo from './DebitcardInfo';
 import MobilePayInfo from './MobilePayInfo';
+import UpiInfo from './UpiInfo';
 const PaymentInfo = () => {
-    // const [Toggle, setToggle]=useState(false);
-    // const Togglebutton = ()=>{
-          
-    // }
+  const [toggle, setToggle] = useState('debitCardInfo');
+  const Togglebutton = (e) => {
+    setToggle(e);
+  }
+
 
   return (
 
     <div className='Payment-container '>
       <h3>Payment Method</h3>
       <div className="payment-method-container">
-        <div className="payment-method" >Credit/Debit Card <div className='bottem-line'></div></div>
-        <div className="payment-method">Mobile Pay<div className='bottem-line'></div></div>
-        <div className="payment-method">Using UPI<div className='bottem-line'></div></div>
-        <div className="payment-method">Paypal<div className='bottem-line'></div></div>
+        <div className="payment-method" onClick={(e) => Togglebutton('debitCardInfo')}>Credit/Debit Card <div className='bottem-line'></div></div>
+        <div className="payment-method" onClick={(e) => Togglebutton('mobileInfo')}>Mobile Pay<div className='bottem-line'></div></div>
+        <div className="payment-method" onClick={(e) => Togglebutton('upi')}>Using UPI<div className='bottem-line'></div></div>
       </div>
 
-      {/* ******************* for card payment mode.********************************** */}
-      <DebitcardInfo/>
+      {/* ******************* diffrent type of payment mode********************************** */}
 
-      {/* ********************** for mobile Pay mode ************************ */}
-
-      <MobilePayInfo/>
+      {
+        toggle === 'debitCardInfo' ? <DebitcardInfo /> : (toggle === 'mobileInfo' ?
+          <MobilePayInfo /> : <UpiInfo/>)
+      }
+      
     </div>
   );
 }
