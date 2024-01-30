@@ -11,6 +11,7 @@ function App() {
   const handleNavigation = (newNavigation) => {
     setNavigation(newNavigation);
   };
+  console.log("hey", navigation);
 
   return (
     <div className="App">
