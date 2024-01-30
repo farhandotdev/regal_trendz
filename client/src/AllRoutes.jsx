@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./Pages/Home/HomePage";
 import Login from "./Pages/Login/Login";
 import ProductPage from "./Components/Product/ProductPage";
-import CartDisplayCard from "./Components/CartSection/CartDisplayCard";
+import Checkout from "./Components/CheckoutPage/Checkout";
 
 const AllRoutes = ({ navigation }) => {
   const { pathname, search } = useLocation();
@@ -31,7 +31,7 @@ const AllRoutes = ({ navigation }) => {
       <Route path="/" element={<HomePage navigation={navigation} />} />
       <Route path="/auth" element={<Login />} />
       <Route path="/productItemPage" element={<ProductPage />} />
-      <Route path="/cartPage" element={<CartDisplayCard />} />
+      <Route path = "/checkoutPage" element={<Checkout/>}/>
     </Routes>
   );
 };
