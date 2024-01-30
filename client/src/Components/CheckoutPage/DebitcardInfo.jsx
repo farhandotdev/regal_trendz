@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DebitcardInfo = () => {
+const DebitcardInfo = (props) => {
   return (
       <form action="#">
           <div className="form-row">
@@ -10,13 +10,7 @@ const DebitcardInfo = () => {
                   <label htmlFor>Enter Cardholder Name</label>
               </div>
           </div>
-          <div className="form-row">
-              <div className="input-data">
-                  <input type="email" required />
-                  <div className="underline" />
-                  <label htmlFor>Email Address</label>
-              </div>
-          </div>
+          
           <div className="form-row">
               <div className="input-data">
                   <input type="Number" required />
@@ -36,6 +30,10 @@ const DebitcardInfo = () => {
                   <label htmlFor>CVV</label>
               </div>
 
+          </div>
+          <div className="payment-submit-btn">
+              <button onClick={props.CheckoutBack}>Back</button>
+              <button type='submit'>Pay</button>
           </div>
       </form>
   );

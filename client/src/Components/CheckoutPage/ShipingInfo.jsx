@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Checkout.css"
-const ShipingInfo = () => {
+import "./Checkout.css";
+const ShipingInfo = (props) => {
   return (
       <div className="shiping-container">
           <h3>Shipping Information</h3>
@@ -11,7 +11,6 @@ const ShipingInfo = () => {
                       <div className="underline" />
                       <label htmlFor>Enter Name</label>
                   </div>
-
               </div>
               <div className="form-row">
                   <div className="input-data">
@@ -34,7 +33,7 @@ const ShipingInfo = () => {
               </div>
               <div className="form-row">
                   <div className="input-data">
-                      <input type="email" required />
+                      <input type="text" required />
                       <div className="underline" />
                       <label htmlFor>City</label>
                   </div>
@@ -48,7 +47,7 @@ const ShipingInfo = () => {
               </div>
               <div className="form-row">
                   <div className="input-data">
-                      <input type="email" required />
+                      <input type="text" required />
                       <div className="underline" />
                       <label htmlFor>Country</label>
                   </div>
@@ -58,15 +57,8 @@ const ShipingInfo = () => {
                       <label htmlFor>PinCode</label>
                   </div>
               </div>
-              <div className="form-row">
-                  <div className="input-data textarea">
-                      <div className="form-row submit-btn">
-                          <div className="input-data">
-                              <div className="inner" />
-                              <input type="submit" defaultValue="submit" />
-                          </div>
-                      </div>
-                  </div>
+              <div className="payment-submit-btn">
+                  <button type='submit' onClick={props.CheckoutNext}>Next</button>
               </div>
           </form>
       </div>

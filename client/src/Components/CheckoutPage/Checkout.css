@@ -161,6 +161,9 @@ input::-webkit-inner-spin-button {
   margin: 32px 0;
   padding: 10px 4px;
 }
+
+/* ***************Payment Method************************ */
+
 .payment-method-container{
   margin-top: 2rem;
   display: flex;
@@ -191,8 +194,11 @@ input::-webkit-inner-spin-button {
   }
 }
 
+/* *******************Payment using Mobile pay**************************** */
+
 .Mobile-pay-box{
   padding: 15px 15px;
+  margin-top: 3rem;
 }
 .mobile-pay-app{
   padding: 24px 10px;
@@ -207,6 +213,26 @@ input::-webkit-inner-spin-button {
 .mobile-pay-app .image-icon img{
   height: 100%;
   width: 100%;
+}
+.payment-submit-btn{
+  width: 95%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.payment-submit-btn button{
+  padding:8px 35px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  background-color: rgb(44 65 82);
+  transition: 0.6s;
+   margin-left:24px ;
+}
+.payment-submit-btn button:hover{
+       background-color: rgb(10, 150, 215);
 }
 
 
