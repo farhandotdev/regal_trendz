@@ -6,7 +6,8 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { cilPlus } from "@coreui/icons";
 import { cilMinus } from "@coreui/icons";
 
-const Quantity = () => {
+
+const Quantity = ({ backGround }) => {
   const [quantity, setquantity] = useState(1);
   function increament() {
     setquantity(quantity + 1);
@@ -17,7 +18,7 @@ const Quantity = () => {
 
   return (
     <div id="quantity-id">
-      <div className="block-quantity">
+      <div className="block-quantity"style={{backgroundColor:backGround}}>
         <div className="reduce-icon">
           <RemoveIcon
             className="icon"
