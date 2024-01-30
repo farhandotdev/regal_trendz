@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Nav handleNavigation={handleNavigation} />
-        <AllRoutes navigation={navigation} />
+        <AllRoutes navigation={navigation} handleNavigation={handleNavigation} />
         <Footer />
       </BrowserRouter>
     </div>
