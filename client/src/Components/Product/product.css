@@ -1,8 +1,7 @@
-
 :root {
   --dark: #ffff;
 }
-.container-parent{
+.container-parent {
   margin-top: 12px;
   padding-top: 125px;
   display: flex;
@@ -12,31 +11,30 @@
 }
 
 .Product-parent {
-  width: 80%;
+  padding: 0 4rem;
   display: flex;
-  margin-top:22px ; 
+  margin-top: 2rem;
+  /* border: 2px solid green; */
 }
-.product-child-1{
-  width: 35%;
+.product-child-1 {
+  width: 50%;
+  display: flex;
+  padding: 1rem 2rem;
+  /* border: 2px solid red; */
 }
-/* .Carousel-image-part-1{
-  margin-top: 20px;
-} */
-.c-image{
-  margin-top: 20px;
-}
+
 .product-child-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid blue; */
   color: #000;
-  padding: 20px  0px  0px 9rem;
+  padding: 20px 30px 20px 30px;
 }
-
-
-
-
 
 .heading-price-product h5 {
   font-size: 1.6rem;
-  color: #ffaa17 !important;
+  color: #4880ad !important;
   font-weight: 600;
 }
 .heading-name-rating-star {
@@ -78,12 +76,11 @@
 .product-cart-controller {
   display: flex;
   align-items: center;
-
 }
 
 .btn-1 {
   border: none;
-  background: #d9b29c;
+  background: #2c4152c5;
   color: #fff;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -93,40 +90,44 @@
   font-weight: 400;
 }
 .btn-1:hover {
-  background-color: bisque;
-  border-color: #d9b29c;
-  color: #000;
-
-}.three-extra{
+  background-color: #2c4152;
+  border-color: #2c4152;
+}
+.three-extra {
   margin-top: 40px;
   padding: 0px 20px;
 }
-.mb-15{
+.mb-15 {
   margin-bottom: 15px;
   color: #000;
 }
-.span-part{
+.span-part {
   margin-inline-start: 8px;
   color: #000;
-
 }
-.span-part a{
+.span-part a {
   color: #000;
   text-decoration: none;
-
-
 }
-.product-reviews{
-  width: 80%; 
+.product-reviews {
+  padding: 0 4rem;
   margin-top: 12px;
-} 
-.related-products{
-  width: 80%;
+}
+.related-products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 50px;
+  padding: 1rem 4rem;
+  /* border: 2px solid red; */
+  /* overflow-x: auto; Enable horizontal scrolling */
 }
 
-.cards{
+.cards {
   display: flex;
-  margin-top: 45px;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem; /* Adjust the gap between cards */
+  min-width: 100%; /* Ensure each card takes the full width of the container */
+  flex-shrink: 0; /* Prevent cards from shrinking to fit */
+  overflow-x: scroll; /* Enable horizontal scrolling */
 }

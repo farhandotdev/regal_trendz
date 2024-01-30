@@ -1,4 +1,5 @@
 import React from "react";
+import './rating.css'
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 
 const Rating = ({ rating, numReviews }) => {
@@ -26,9 +27,9 @@ const Rating = ({ rating, numReviews }) => {
   };
 
   return (
-    <div className="rating" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div className="stars">{renderStars()}</div>
-      <p className="num-reviews" style={{ marginTop: "16px" }}>{`(${numReviews} Review${numReviews !== 1 ? "s" : ""})`}</p>
+    <div className="rating">
+      <div className="stars"> <p style={{fontSize:"12px", textAlign:"center"}} className="num-reviews">{`(${numReviews} Review${numReviews !== 1 ? "s" : ""})`}</p> <span>{renderStars()}</span> </div>
+      
     </div>
   );
 };
