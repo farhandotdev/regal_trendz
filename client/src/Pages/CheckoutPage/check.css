@@ -1,0 +1,6 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+    padding-top: 125px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DebitcardInfo = (props) => {
+const DebitcardInfo = ({checkstate}) => {
   return (
       <form action="#">
           <div className="form-row">
@@ -32,7 +32,7 @@ const DebitcardInfo = (props) => {
 
           </div>
           <div className="payment-submit-btn">
-              <button onClick={props.CheckoutBack}>Back</button>
+              <button onClick={(e)=>{checkstate("Shipping")}}>Back</button>
               <button type='submit'>Pay</button>
           </div>
       </form>

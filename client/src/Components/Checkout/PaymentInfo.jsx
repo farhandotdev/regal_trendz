@@ -2,8 +2,8 @@ import { useState } from 'react';
 import "./Checkout.css"
 import DebitcardInfo from './DebitcardInfo';
 import MobilePayInfo from './MobilePayInfo';
-import UpiInfo from './UpiInfo';
-const PaymentInfo = () => {
+import UpiInfo from './upiInfo';
+const PaymentInfo = ({chekout}) => {
   const [toggle, setToggle] = useState('debitCardInfo');
   const Togglebutton = (e) => {
     setToggle(e);
@@ -23,8 +23,8 @@ const PaymentInfo = () => {
       {/* ******************* diffrent type of payment mode********************************** */}
 
       {
-        toggle === 'debitCardInfo' ? <DebitcardInfo /> : (toggle === 'mobileInfo' ?
-          <MobilePayInfo /> : <UpiInfo/>)
+        toggle === 'debitCardInfo' ? <DebitcardInfo checkstate={chekout}/> : (toggle === 'mobileInfo' ?
+          <MobilePayInfo checkstate={chekout} /> : <UpiInfo upiCheckState={chekout}/>)
       }
       
     </div>

@@ -49,9 +49,15 @@ function Nav({ handleNavigation }) {
             <Link to={"/"} style={{ textDecoration: "none", color: "#2c4152" }}>
               <li onClick={(e) => handleNavigation("/")}>HOME</li>
             </Link>
-            <li onClick={(e) => handleNavigation("men")}>MEN</li>
-            <li onClick={(e) => handleNavigation("women")}>WOMEN</li>
-            <li onClick={(e) => handleNavigation("kids")}>KIDS</li>
+            <Link to={"/"} style={{ textDecoration: "none", color: "#2c4152" }}>
+              <li onClick={(e) => handleNavigation("men")}>MEN</li>
+            </Link>
+            <Link to={"/"} style={{ textDecoration: "none", color: "#2c4152" }}>
+              <li onClick={(e) => handleNavigation("women")}>WOMEN</li>
+            </Link>
+            <Link to={"/"} style={{ textDecoration: "none", color: "#2c4152" }}>
+              <li onClick={(e) => handleNavigation("kids")}>KIDS</li>
+            </Link>
           </ul>
         </div>
       </div>
