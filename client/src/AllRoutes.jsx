@@ -3,9 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./Pages/Home/HomePage";
 import Login from "./Pages/Login/Login";
 import ProductPage from "./Components/Product/ProductPage";
-import Checkout from "./Components/CheckoutPage/Checkout";
+import Checkout from "./Pages/CheckoutPage/Checkout";
 import CartProduct from "./Components/CartProduct/CartProduct";
-import PaymentInfo from "./Components/CheckoutPage/PaymentInfo";
+
 
 const AllRoutes = ({ navigation }) => {
   const { pathname, search } = useLocation();
@@ -33,9 +33,8 @@ const AllRoutes = ({ navigation }) => {
       <Route path="/" element={<HomePage navigation={navigation} />} />
       <Route path="/auth" element={<Login />} />
       <Route path="/productItemPage" element={<ProductPage />} />
-      <Route path = "/checkoutPage" element={<Checkout/>}/>
+      <Route path = "/c" element={<Checkout/>}/>
       <Route path = "/Cart" element={<CartProduct/>}/>
-      <Route path="/p" element={<PaymentInfo />} />
     </Routes>
   );
 };

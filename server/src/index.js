@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 // const morgan = require("morgan");
-const userrouter = require('./routes/userAuth')
+const { userrouter } = require("./routes/userAuth");
 
 const { adminAuthRouter } = require("./routes/adminAuth");
 const { productRouter } = require("./routes/products");
@@ -23,8 +23,7 @@ app.use(express.json());
 app.use("/admin", adminAuthRouter);
 // Using Product Router product.js
 app.use("/product", productRouter);
-
-// Using Authentication Router from adminAuth.js(user)
+// Using Authentication Router from userAuth.js(user)
 app.use("/user", userrouter);
 
 app.get("/", (req, res) => {
@@ -32,7 +31,9 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect("mongodb+srv://regal:regal@cluster0.rgmucgx.mongodb.net/?retryWrites=true&w=majority")
+  .connect(
+    "mongodb+srv://regal:regal@cluster0.rgmucgx.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => {
     app.listen(5000, () => {
       console.log("Server Started on port no. 5000");
@@ -41,5 +42,3 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
-

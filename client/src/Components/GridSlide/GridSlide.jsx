@@ -53,6 +53,7 @@ const GridSlide = () => {
         />
       </div>
     </div>
+    
   );
 };
 
