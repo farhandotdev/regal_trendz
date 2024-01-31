@@ -16,17 +16,24 @@ function Nav({ handleNavigation }) {
     <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-navigation">
         <div className="navbar-logo">
-          <Link style={{ textDecoration: "none" }}>
-            <h1 onClick={(e) => handleNavigation("/")}>RegalTrendZ</h1>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <h1>RegalTrendZ</h1>
           </Link>
         </div>
         <div className="navbar-icons">
           <p className="profile_icon">
             <PersonIcon style={{ cursor: "pointer" }} />
           </p>
-          <p className="cart_icon">
-            <ShoppingCartIcon style={{ cursor: "pointer" }} />
-          </p>
+
+          <Link
+            to={"/cartPage"}
+            style={{ textDecoration: "none", color: "#2c4152" }}
+          >
+            <p className="cart_icon">
+              <ShoppingCartIcon style={{ cursor: "pointer" }} />
+            </p>
+          </Link>
+
           <p className="fav_icon">
             <FavoriteIcon style={{ cursor: "pointer" }} />
           </p>
@@ -39,7 +46,9 @@ function Nav({ handleNavigation }) {
         </div>
         <div className="navigation-items">
           <ul>
-            <li onClick={(e) => handleNavigation("/")}>HOME</li>
+            <Link to={"/"} style={{ textDecoration: "none", color: "#2c4152" }}>
+              <li onClick={(e) => handleNavigation("/")}>HOME</li>
+            </Link>
             <li onClick={(e) => handleNavigation("men")}>MEN</li>
             <li onClick={(e) => handleNavigation("women")}>WOMEN</li>
             <li onClick={(e) => handleNavigation("kids")}>KIDS</li>

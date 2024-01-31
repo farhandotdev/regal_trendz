@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d9b29c;
+  color: #fff;
+  /* background-color: #2c4152; */
 
 }
 .reduce-icon {
@@ -31,7 +32,7 @@
 .Number-items H5 {
   background-color: transparent;
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.61);
+  color: #fff;
 }
 
 .add-icon {

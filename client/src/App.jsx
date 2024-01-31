@@ -11,12 +11,13 @@ function App() {
   const handleNavigation = (newNavigation) => {
     setNavigation(newNavigation);
   };
+  console.log("hey", navigation);
 
   return (
     <div className="App">
       <BrowserRouter>
         <Nav handleNavigation={handleNavigation} />
-        <AllRoutes navigation={navigation} />
+        <AllRoutes navigation={navigation} handleNavigation={handleNavigation} />
         <Footer />
       </BrowserRouter>
     </div>
