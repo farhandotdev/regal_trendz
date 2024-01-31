@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 // const morgan = require("morgan");
+const userrouter = require('./routes/userAuth')
 
 const { adminAuthRouter } = require("./routes/adminAuth");
 const { productRouter } = require("./routes/products");
@@ -18,10 +19,13 @@ app.use("/uploads", express.static("src/uploads"));
 // Middleware: Parse JSON bodies
 app.use(express.json());
 
-// Using Authentication Router from adminAuth.js
+// Using Authentication Router from adminAuth.js(admin)
 app.use("/admin", adminAuthRouter);
 // Using Product Router product.js
 app.use("/product", productRouter);
+
+// Using Authentication Router from adminAuth.js(user)
+app.use("/user", userrouter);
 
 app.get("/", (req, res) => {
   res.send("Regal Trendz");
