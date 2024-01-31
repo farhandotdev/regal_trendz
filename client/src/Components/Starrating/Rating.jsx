@@ -2,7 +2,7 @@ import React from "react";
 import './rating.css'
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 
-const Rating = ({ rating, numReviews }) => {
+const Rating = ({ rating, numReviews ,  fsize}) => {
   const renderStars = () => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
@@ -10,7 +10,7 @@ const Rating = ({ rating, numReviews }) => {
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<IoIosStar key={i} color="black" />);
+      stars.push(<IoIosStar key={i} color="black"/>);
     }
 
     if (hasHalfStar) {
@@ -28,7 +28,7 @@ const Rating = ({ rating, numReviews }) => {
 
   return (
     <div className="rating">
-      <div className="stars"> <p style={{fontSize:"12px", textAlign:"center"}} className="num-reviews">{`(${numReviews} Review${numReviews !== 1 ? "s" : ""})`}</p> <span>{renderStars()}</span> </div>
+      <div className="stars"> <p style={{fontSize:fsize, textAlign:"center"}} className="num-reviews">{`(${numReviews} Review${numReviews !== 1 ? "s" : ""})`}</p> <span>{renderStars()}</span> </div>
       
     </div>
   );

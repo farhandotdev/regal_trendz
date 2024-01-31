@@ -1,41 +1,93 @@
   .component-parent {
+  margin-top: 12px;
+  padding: 10px 50px;
+
+}
+.heading-part {
+ display: flex;
+ padding: 10px 10px;
+ justify-content: space-around;
+ background-color: #2c4152;
+ color: #fff;
+
+}
+.heading-part  h1{
+  font-size: 1.5rem;
+}
+.tab-parent-part{
+  display: flex;
+  box-shadow: 1px 1px 5px #2c4152;
+
+}
+.tab1-description{
+  padding: 25px 15px;
+  width: 50%;
+}
+.tab1-description p{
+  line-height: 1.4rem;
+  word-spacing: 12px;
+}
+
+.tab2-comments{
+  border-left: 1px solid gray;
+  padding: 20px 10px;
+  width: 50%;
+  height:400px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
-.heading-part-details {
-  margin-top: 12px;
+.tab2-child{
+  margin-top: 20px;
+}
+.heading-review h5{
+  font-size: 1.5rem;
+}
+.username-icon{
   display: flex;
-  cursor: pointer;
+  align-items: center;
+}
+.icon-user{
+  font-size: 1.8rem;
 }
 
-
-.common-name h1 {
-  font-size: 1.1rem;
-  color: #000;
-  transition: all 0.5s;
-  font-weight: 500;
-  margin-inline-end: 25px;
+.username{
+  margin-inline-start: 5px;
+  font-size: 1.2rem;
 }
-
-.common-name h1:hover
-{
-  text-decoration: underline;
-  text-decoration-color: bisque;
-}
-.description-details {
-  margin-inline-start: 8px;
-}
-
-.horizontal-line-tag {
-  color: gray;
-}
-.paragraph-details {
+.star-reviews {
   display: flex;
+  align-items: center;
+  
+}
+.stars{
 }
 
-.common-para P {
+.Quality-product{
+  margin-inline-start: 20px;
+}
+.Quality-product h3{
   font-size: 1rem;
-  font-weight: 300;
-  color: #000;
-  margin: 0;
+  margin-top: 10px;
 }
+.Comments-part{
+  margin-top: 5px;
+
+}
+.Comments-part p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.buttons-help{
+  padding: 12px 25px ;
+}
+.buttons-help button{
+  margin-inline-start: 12px;
+  padding: 5px 12px  ;
+  border-color: antiquewhite;
+  outline: none;
+  box-shadow: 1px 1px 5px black;
+  border: none;
+}
+
