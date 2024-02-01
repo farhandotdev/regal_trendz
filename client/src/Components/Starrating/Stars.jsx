@@ -1,7 +1,7 @@
 import ReactStars from "react-stars";
 import React from "react";
 
-const Stars = ({review}) => {
+const Stars = ({review,touch}) => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
     // You can perform additional actions with the new rating if needed
@@ -12,9 +12,9 @@ const Stars = ({review}) => {
       count={5}
       onChange={ratingChanged}
       size={24}
-      color2={"#2c4152"}
+      color2={"yellow"}
       value={review}
-      edit={false}
+      edit={{touch}}
     />
   );
 };
