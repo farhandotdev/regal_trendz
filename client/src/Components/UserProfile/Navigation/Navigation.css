@@ -1,0 +1,40 @@
+.userNav{
+    display: flex;
+    width: 15%;
+    height: 35rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid rgba(0, 0, 0, 0.395);
+}
+.profileImg{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profileImg img{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    padding: 4px;
+    margin-bottom: 4px ;
+}
+.navElement {
+    margin-top:2rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.navElement li{
+    list-style: none;
+    padding: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navElement li:hover{
+    color: blue;
+}

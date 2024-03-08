@@ -1,32 +1,30 @@
 import React from "react";
-import phonepe from "../../assets/phonepe.png";
-import amazon from "../../assets/amazon-a.png";
-import google from "../../assets/google-pay.png";
-import paytm from "../../assets/paytm.png";
+import{ phonpe,googlepay,paytm,amazon2 }from "../../assets/index";
+
 const MobilePayInfo = ({ checkstate }) => {
   return (
     <div className="Mobile-pay-box">
       <div className="mobile-pay-app">
         <div className="image-icon">
-          <img src={phonepe} alt="" />
+          <img src={phonpe} alt="" />
         </div>
         <label htmlFor="">Phonepe</label>
       </div>
       <div className="mobile-pay-app">
-        <div className="image-icon">
+        <div className="image-icon paytm">
           <img src={paytm} alt="" />
         </div>
         <label htmlFor="">Paytm</label>
       </div>
       <div className="mobile-pay-app">
         <div className="image-icon">
-          <img src={amazon} alt="" />
+          <img src={amazon2} alt="" />
         </div>
         <label htmlFor="">Amazon Pay</label>
       </div>
       <div className="mobile-pay-app">
         <div className="image-icon">
-          <img src={google} alt="" />
+          <img src={googlepay} alt="" />
         </div>
         <label htmlFor="">Google Pay</label>
       </div>
