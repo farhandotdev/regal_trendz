@@ -1,0 +1,8 @@
+.Profile-container{
+    margin-top: 122px;
+    padding: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3px;
+}

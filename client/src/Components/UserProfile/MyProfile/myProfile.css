@@ -1,0 +1,49 @@
+.InfoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+.ProfileImage{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProfileImage img{
+    border-radius: 50%;  
+     height: 95%;
+    width: 95%;
+
+}
+.personalInfo{
+    padding: 33px;
+}
+.personalInfo h3{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 23px;
+}
+.personalInfo h3 button{
+    padding: 5px 12px;
+    font-size: 15px;
+    margin-left: 18rem;
+    border: none;
+    background-color: rgb(36, 95, 232);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s ;
+
+}
+.personalInfo h3 button:hover{
+    background-color:rgb(117, 156, 247) ;
+    color: black;
+}
+.personalInfo table tr td{
+    padding: 12px  62px;
+    
+}

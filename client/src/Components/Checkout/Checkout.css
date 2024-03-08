@@ -214,6 +214,11 @@ input::-webkit-inner-spin-button {
   height: 25px;
   margin-right: 15px;
 }
+.mobile-pay-app .paytm {
+  width: 44px;
+ 
+}
+
 .mobile-pay-app .image-icon img {
   height: 100%;
   width: 100%;
@@ -247,4 +252,28 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+/* ***************Payment Processing Page*********************************** */
+
+.Process-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;  
+  margin-top: 80px;
+}
+.process-lottie{
+  padding: 2px;
+  width: 42rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 6px 4px;
+}
+.Process-container h4{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
