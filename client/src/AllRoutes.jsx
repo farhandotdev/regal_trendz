@@ -39,7 +39,7 @@ const AllRoutes = ({ navigation }) => {
       <Route path="/Processing" element={<PaymentProcess lottiename={loadingPayment} color={"#ae811c"} title ={"Your payment is on Processing"} />} />
       <Route path="/Sucessful" element={<PaymentProcess  lottiename={successPayment}title={"Your payment is Sucessful"} color={"green"} />} />
       <Route path="/Cancle" element={<PaymentProcess lottiename={failedPayment} title={"Your payment is Failed"} color={"red"} />} />
-      <Route path="UserProfile" element = { <ProfilePage/>} />
+      <Route path="/UserProfile" element = { <ProfilePage/>} />
 
     </Routes>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Checkout.css"
 import { failedPayment } from '../../assets/index';
-import Lottie from 'lottie-react';
+// import Lottie from 'lottie-react';
 const PaymentProcess = (props) => {
     return (
         <div className='Process-container'>
