@@ -6,7 +6,7 @@ import ProductPage from "./Components/Product/ProductPage";
 import Checkout from "./Pages/CheckoutPage/Checkout";
 import CartProduct from "./Components/CartProduct/CartProduct";
 import PaymentProcess from "./Components/Checkout/PaymentProcess";
-import { failedPayment,successPayment, loadingPayment} from "./assets/index";
+import { failedPayment, successPayment, loadingPayment } from "./assets/index";
 import ProfilePage from "./Pages/UserProfilePage/ProfilePage";
 const AllRoutes = ({ navigation }) => {
   const { pathname, search } = useLocation();
@@ -35,12 +35,11 @@ const AllRoutes = ({ navigation }) => {
       <Route path="/auth" element={<Login />} />
       <Route path="/productItemPage" element={<ProductPage />} />
       <Route path="/c" element={<Checkout />} />
-      <Route path="/Cart" element={<CartProduct />} />
-      <Route path="/Processing" element={<PaymentProcess lottiename={loadingPayment} color={"#ae811c"} title ={"Your payment is on Processing"} />} />
-      <Route path="/Sucessful" element={<PaymentProcess  lottiename={successPayment}title={"Your payment is Sucessful"} color={"green"} />} />
+      <Route path="/cart" element={<CartProduct />} />
+      <Route path="/Processing" element={<PaymentProcess lottiename={loadingPayment} color={"#ae811c"} title={"Your payment is on Processing"} />} />
+      <Route path="/Sucessful" element={<PaymentProcess lottiename={successPayment} title={"Your payment is Sucessful"} color={"green"} />} />
       <Route path="/Cancle" element={<PaymentProcess lottiename={failedPayment} title={"Your payment is Failed"} color={"red"} />} />
-      <Route path="/UserProfile" element = { <ProfilePage/>} />
-
+      <Route path="/userProfile" element={<ProfilePage />} />
     </Routes>
   );
 };

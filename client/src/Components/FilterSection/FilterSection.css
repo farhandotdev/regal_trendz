@@ -1,58 +1,48 @@
 .FilterSec-container {
   padding: 0 3%;
-  /* border: 2px solid ; */
-
-  /* height: 80rem; */
+  /* border: 2px solid; */
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.FilterSec-container .FilterPart {
-  /* width: 80%; */
-  /* border: 2px solid red; */
-  display: flex;
-}
+
 .category-filter {
   width: 30%;
   border: 1px solid rgba(16, 16, 16, 0.282);
 }
+
 .card-display-section {
-  width: calc(100% - 30%);
-  padding: 0 10px;
+  width: 90%;
+  margin-left: 5px ;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.card-display-section .total-item {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.429);
-  border-top: 1px solid rgba(128, 128, 128, 0.429);
-  padding: 20px 8px;
-  font-size: 12px;
-  /* font-weight: bold; */
-  letter-spacing: 1px;
-}
-.FilterSec-container .CardPart {
+
+.CardPart {
   /* border: 2px solid red; */
-  margin-top: 15px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
-.FilterSec-container .AddCardPart {
-  width: 80%;
-  /* border: 2px solid yellow; */
+.CardPart .card-container {
+  /* flex: 0 0 calc(25% - 10px);  */
+  margin-bottom: 20px;
+}
+
+.total-item{
+  padding: 15px 15px;
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.652);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.652);
 }
 
 
-.AddCardPart .addpart {
-  border: 1px solid rgba(16, 16, 16, 0.282);
-  margin-top: 5px;
-}
-.AddCardPart .addpart h3 {
-  text-align: center;
-  padding: 5px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 20px;
-}
+/* Add more specific styles for individual cards if needed */
 
 @media screen and (max-width: 1150px) {
   .AddCardPart {
@@ -70,5 +60,7 @@
     display: flex;
   }
 }
+
 @media screen and (max-width: 400px) {
+  /* Add responsive styles if needed */
 }

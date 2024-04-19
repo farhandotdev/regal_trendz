@@ -10,19 +10,14 @@
   /* justify-content: center; */
 }
 .heading-part h1 {
-  font-size: 1.8rem;
-  margin-inline-start: 25px;
+  font-size: 1.2rem;
   color: black;
 }
-.tab-parent-part {
-  /* display: flex; */
-}
-.tab1-description {
-  padding: 25px 45px;
-}
+
 .tab1-description p {
-  line-height: 1.4rem;
-  word-spacing: 12px;
+  word-spacing: 5px;
+  font-size: 12px;
+  padding: 0px 10px;
 }
 
 .parent-reviews{
@@ -30,64 +25,55 @@
 }
 
 .tab2-comments {
-  padding: 20px 10px;
   display: flex;
   margin-top: 20px;
 }
 .tab2-child {
   margin-top: 20px;
-  padding: 2px 5vmax;
-  margin-inline-start: 30px;
-  box-shadow: 1px 1px 1px #ccc;
-  border-radius: 12px ;
+  padding: 2px 30px;
+  margin-inline-start: 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px ;
 }
-.heading-review h5 {
-  font-size: 1.5rem;
-  margin-inline-start: 50px;
-  margin-top: 12px;
-}
+
 .username-icon {
   display: flex;
   align-items: center;
 }
 .icon-user {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .username {
   margin-inline-start: 5px;
-  font-size: 1.2rem;
+  font-size: .7rem;
+}
+.date-review p{
+  font-size: .7rem;
 }
 .star-reviews {
   display: flex;
   align-items: center;
+  font-size: .9rem;
 }
 
-
-.Quality-product {
-  margin-inline-start: 20px;
-}
-.Quality-product h3 {
-  font-size: 1rem;
-  margin-top: 10px;
-}
 .Comments-part {
   margin-top: 5px;
 }
 .Comments-part p {
-  font-size: 1rem;
+  font-size: .7rem;
   font-weight: 500;
 }
 .buttons-help {
-  padding: 12px 25px;
+  padding: 15px 0px;
 }
 .buttons-help button {
   margin-inline-start: 12px;
   padding: 5px 12px;
   border-color: antiquewhite;
   outline: none;
-  box-shadow: 1px 1px 4px black;
-  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  border: none;
+  font-size: .6rem;
 }
 .Review-form{
   width: 50%;

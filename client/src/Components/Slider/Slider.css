@@ -1,12 +1,12 @@
 .Slidehome {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 5px 0px;
 }
 .Carousel-home {
   width: 94%;
 }
 .carousel-image img {
   width: 10rem;
-  height: 24rem;
+  height: 35rem;
 }

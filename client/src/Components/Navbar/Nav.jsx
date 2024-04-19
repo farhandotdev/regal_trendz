@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
+
 import "./Nav.css";
 function Nav({ handleNavigation }) {
   const [isSticky, setIsSticky] = useState(true);
@@ -21,12 +22,13 @@ function Nav({ handleNavigation }) {
           </Link>
         </div>
         <div className="navbar-icons">
-          <p className="profile_icon">
-            <PersonIcon style={{ cursor: "pointer" }} />
-          </p>
-
+          <Link to={"/userProfile"} style={{ textDecoration: "none", color: "#2c4152" }}>
+            <p className="profile_icon">
+              <PersonIcon style={{ cursor: "pointer" }} />
+            </p>
+          </Link>
           <Link
-            to={"/cartPage"}
+            to={"/cart"}
             style={{ textDecoration: "none", color: "#2c4152" }}
           >
             <p className="cart_icon">
