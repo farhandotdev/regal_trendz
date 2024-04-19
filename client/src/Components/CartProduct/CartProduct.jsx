@@ -65,7 +65,7 @@ const CartProduct = () => {
                 name=""
                 id=""
                 checked={check}
-                // onChange={onChange}
+              // onChange={onChange}
               />
               <div className="product-image-details">
                 <img src={item.img} alt="" />

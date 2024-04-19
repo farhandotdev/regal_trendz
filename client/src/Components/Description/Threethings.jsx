@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RiAccountCircleLine } from "react-icons/ri";
 import "./three.css";
 import Stars from "../Starrating/Stars";
-
+ 
 const Threethings = () => {
   const reviewData = [
     {
@@ -45,7 +45,6 @@ const Threethings = () => {
     <div className="component-parent">
       <div className="heading-part">
         <h1>Description</h1>
-        {/* <h1>Comments</h1> */}
       </div>
       <div className="tab-parent-part">
         <div className="tab1-description">
@@ -70,10 +69,7 @@ const Threethings = () => {
         <div className="tab2-comments">
           <div className="parent-reviews">
             <div className="heading-part">
-              <h1>Comments</h1>
-            </div>
-            <div className="heading-review">
-              <h5>Top Reviews From India</h5>
+              <h1>Reviews</h1>
             </div>
             {reviewData.map((item) => (
               <div className="tab2-child">
@@ -88,12 +84,9 @@ const Threethings = () => {
                     <Stars review={item.review} touch={false} />
                   </span>
 
-                  <span className="Quality-product">
-                    <h3>{item.Quality}</h3>
-                  </span>
                 </div>
                 <div className="date-review">
-                  <p>Reviewed in India on {item.dateofReview}</p>
+                  <p>Reviewed on {item.dateofReview}</p>
                 </div>
                 <div className="Comments-part">
                   <p>{item.comments}</p>

@@ -26,7 +26,6 @@
 .product-child-2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   /* border: 2px solid blue; */
   color: #000;
   padding: 20px 30px 20px 30px;
@@ -44,28 +43,24 @@
 }
 .heading-name-rating-star h3 {
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .product-details {
   color: #000;
-
-  margin-top: 35px;
+  margin-top: 8px;
 }
 .product-details p {
   color: #000;
-  line-height: 1.8;
-  font-size: 1.1rem;
+    font-size: 1rem;
   font-weight: 400;
-  margin: 0;
+  margin-top: 1.9rem;
 }
 .property-product {
   margin-top: 35px;
   padding-left: 20px;
 }
-.list-items {
-  margin-bottom: 12px;
-}
+
 .product-cart-btns {
   display: flex;
   margin-top: 12px;
